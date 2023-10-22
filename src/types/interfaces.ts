@@ -1,6 +1,3 @@
-
-// type Unit = '%' | 'px' | 'deg';
-
 export interface IOption {
   name: string;
   property: string;
