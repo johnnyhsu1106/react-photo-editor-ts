@@ -1,11 +1,13 @@
+import Container from '../Container/Container';
 import { usePhotoEditorContext } from '../../context/PhotoEditorContext';
+
 
 const Image = () => {
   const { imageStyle } = usePhotoEditorContext();
   return (
-    <div 
+    <Container
       className="main-image"
-      style={imageStyle} 
+      style={imageStyle}  
     />
   )
 }

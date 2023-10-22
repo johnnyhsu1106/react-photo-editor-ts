@@ -1,16 +1,19 @@
-import { ReactNode } from 'react';
+import { ReactNode, CSSProperties } from 'react';
+
 
 interface ContainerProps {
   className: string;
-  children: ReactNode;
+  style?: CSSProperties;
+  children?: ReactNode;
 };
 
 const Container = ({
-  className,
-  children
+  className='',
+  style={},
+  children,
 }: ContainerProps) => {
   return (
-    <div className={className}>
+    <div className={className} style={style}>
       {children}
     </div>
   )

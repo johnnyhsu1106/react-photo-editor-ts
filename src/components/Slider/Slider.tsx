@@ -1,3 +1,4 @@
+import Container from '../Container/Container';
 import { usePhotoEditorContext } from '../../context/PhotoEditorContext';
 
 const Slider = () => {
@@ -7,7 +8,7 @@ const Slider = () => {
   } = usePhotoEditorContext();
 
   return (
-    <div className="slider-container">
+    <Container className="slider-container"> 
       <input
         type="range"
         className="slider"
@@ -16,7 +17,7 @@ const Slider = () => {
         value={selectedOption.value}
         onChange={(e) => {handleSliderChange(+e.target.value)}}
       />
-    </div>
+    </Container>
   )
 }
 

@@ -9,6 +9,3 @@ export interface IOption {
   unit: string;
 };
 
-export interface IStyle {
-  filter: string;
-};
